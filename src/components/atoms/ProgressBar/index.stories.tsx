@@ -3,7 +3,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 import { ProgressBar as ProgressBarComponent } from '.'
 
 export default {
-  title: 'Components/ProgressBar',
+  title: 'Atoms/ProgressBar',
   component: ProgressBarComponent,
   argTypes: {
     percentage: { control: { type: 'range', min: 0, max: 100 } },

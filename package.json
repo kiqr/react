@@ -8,7 +8,8 @@
   "scripts": {
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=dd03e9c83563"
   },
   "devDependencies": {
     "@babel/core": "^7.18.5",
@@ -50,5 +51,7 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "@kiqr/react@0.0.0"
 }

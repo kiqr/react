@@ -4,7 +4,7 @@ import { ComponentMeta } from '@storybook/react'
 import { Placeholder as Placeholder } from '.'
 
 export default {
-  title: 'Components/Placeholder',
+  title: 'Atoms/Placeholder',
   component: Placeholder,
 } as ComponentMeta<typeof Placeholder>
 
