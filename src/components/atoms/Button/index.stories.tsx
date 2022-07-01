@@ -4,6 +4,8 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 import { Button } from '.'
 import type { ButtonProps } from './types'
 
+import { FaBeer, FaAddressBook } from 'react-icons/fa'
+
 export default {
   title: 'Atoms/Button',
   component: Button,
@@ -23,8 +25,9 @@ const Template: ComponentStory<typeof Button> = ({
   text,
   type,
   size,
+  icon,
 }: ButtonProps) => {
-  return <Button text={text} type={type} size={size} />
+  return <Button text={text} type={type} size={size} icon={icon} />
 }
 
 export const button = Template.bind({})
@@ -32,6 +35,22 @@ button.args = {
   text: 'This is the default button',
   type: 'secondary',
   size: 'md',
+}
+
+export const buttonWithIcon = Template.bind({})
+buttonWithIcon.args = {
+  text: 'Grab a beer',
+  type: 'secondary',
+  size: 'md',
+  icon: <FaBeer />,
+}
+
+export const iconButton = Template.bind({})
+iconButton.args = {
+  text: ' ',
+  type: 'secondary',
+  size: 'md',
+  icon: <FaAddressBook />,
 }
 
 export const primary = Template.bind({})
@@ -53,6 +72,13 @@ large.args = {
   text: 'This is a large button',
   type: 'secondary',
   size: 'lg',
+}
+
+export const medium = Template.bind({})
+medium.args = {
+  text: 'This is a medium button',
+  type: 'secondary',
+  size: 'md',
 }
 
 export const small = Template.bind({})
