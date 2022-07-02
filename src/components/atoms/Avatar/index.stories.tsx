@@ -10,11 +10,21 @@ export default {
   argTypes: {},
 } as ComponentMeta<typeof Avatar>
 
-const Template: ComponentStory<typeof Avatar> = ({ src }: AvatarProps) => {
-  return <Avatar src={src} />
+const Template: ComponentStory<typeof Avatar> = ({
+  src,
+  type,
+}: AvatarProps) => {
+  return <Avatar type={type} src={src} />
 }
 
-export const avatar = Template.bind({})
-avatar.args = {
+export const circle = Template.bind({})
+circle.args = {
   src: 'https://avatars.dicebear.com/api/adventurer-neutral/llool.svg',
+  type: 'circle',
+}
+
+export const square = Template.bind({})
+square.args = {
+  src: 'https://avatars.dicebear.com/api/adventurer-neutral/llool.svg',
+  type: 'square',
 }
