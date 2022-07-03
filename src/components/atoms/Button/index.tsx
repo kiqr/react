@@ -21,8 +21,8 @@ export const Button = ({
   }
 
   const sizeClasses = {
-    'px-8 h-16 text-lg': size === 'lg',
-    'px-6 h-12 text-md': size === 'md',
+    'px-8 h-16 text-lg gap-x-2': size === 'lg',
+    'px-6 h-12 text-md gap-x-2': size === 'md',
     'px-3 h-8 text-sm': size === 'sm',
     'px-2 h-6 text-xs': size === 'xs',
   }

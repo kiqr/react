@@ -8,6 +8,10 @@ export { Button } from './components/atoms/Button'
 
 export { Card } from './components/atoms/Card'
 
+export { Dropdown } from './components/atoms/Dropdown'
+
+export { Heading } from './components/atoms/Heading'
+
 export { Logo } from './components/atoms/Logo'
 
 export { Padding } from './components/atoms/Padding'
